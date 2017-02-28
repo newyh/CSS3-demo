@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 1000px;
+			height: 1000px;
+			background-color: yellow;
+			/*display: none;*/
+		}
+		.box:hover{
+			transition: all 5s;
+			width: 500px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		setTimeout(function () {
+			$('.box').animate({width:250,height:250},5000);
+		}, 5000)
+
+		// $('.box').on('hover', function () {
+		// 	$(this).fadeOut(600);
+		// });
+	</script>
+</body>
+</html>

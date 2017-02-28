@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div{
+            width: 200px;
+            height: 200px;
+            border: 5px solid #cccccc;
+            margin:100px auto;
+            background: url(images2/bg.jpg);
+            background-size: cover;
+            border-radius: 100px;
+            position: relative;
+        }
+        .div::before{
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -30px;
+            margin-top: -30px;
+            content: '';
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ffffff;
+            background:  rgba(0,0,0,0.5);
+            border-radius: 50px;
+        }
+        .div::after{
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -9px;
+            margin-top: -10px;
+            content: '';
+            width: 6px;
+            height: 20px;
+            border-color: #ffffff;
+            border-style:solid;
+            border-top:none;
+            border-bottom:none;
+            border-left-width:6px;
+            border-right-width:6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+
+    </div>
+</body>
+</html>
